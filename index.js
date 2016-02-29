@@ -164,7 +164,7 @@ function Jasmine2HTMLReporter(options) {
 
 
                     //Folder structure and filename
-                    screenshotPath = path.join(self.savePath + self.screenshotsFolder, spec.screenshot);
+                    screenshotPath = path.join(self.savePath + '/' + self.screenshotsFolder, spec.screenshot);
 
                     mkdirp(path.dirname(screenshotPath), function (err) {
                         if (err) {
